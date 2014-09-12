@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<!--
+App-o-Mat jQuery Mobile Cordova starter template
+Copyright 2014 Lou Franco
+https://github.com/app-o-mat/jqm-cordova-template-project
+http://app-o-mat.com
+
+MIT License
+https://github.com/app-o-mat/jqm-cordova-template-project/LICENSE.md
+-->
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+
+	<title>yourname</title>
+
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="lib/jquery-mobile/css/jquery.mobile-1.4.0.min.css" />
+
+	<script type="text/javascript" src="lib/jquery-mobile/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-mobile-router/js/jquery.mobile.router.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-mobile/js/jquery.mobile-1.4.0.min.js"></script>
+	<script type="text/javascript" src="lib/jquery/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="home">
+
+	<div role="main" class="ui-content">
+		<div>
+    	<h1>Staff</h1>
+  	</div>
+	  <div>
+	      <input id="password" type="text" name="password" placeholder='password'/>
+	      <div id="click"></div><a href="#next" class="ui-btn">Login</a>
+		</div>
+
+	</div>
+
+
+</div>
+
+<div data-role="page" id="next">
+	<div data-role="header" data-position="fixed">
+
+	</div>
+
+	<div role="main" class="ui-content">
+
+	</div>
+</div>
+
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="lib/fastclick/js/fastclick.js"></script>
+<script type="text/javascript" src="lib/handlebars/js/handlebars-v1.3.0.js"></script>
+
+<script type="text/javascript">
+	yourname.app.initialize();
+</script>
+
+</body>
+</html>
