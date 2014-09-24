@@ -4,7 +4,7 @@ var getTokens = function() {
          console.log('autoload')
         var engineerUuid = device.uuid;
         console.log(engineerUuid);
-        var actualIp = "192.168.2.2:3000"
+        var actualIp = "192.168.100.165:3000"
         var URL = "http://" + actualIp + "/engineer/" + engineerUuid
         console.log(URL)
         object = {
@@ -43,11 +43,11 @@ yourname.app = {
 
     receivedEvent: function(id) {
         var switchOn = function() {
-            $(".ui-mobile .ui-page").css("background-color","#4dad49");
+            // $(".ui-mobile .ui-page").css("background-color","#4dad49");
             console.log('notice the server that the phone is in the beacon region')
             var engineerUuid = device.uuid;
             console.log(engineerUuid);
-            var actualIp = "192.168.2.2:3000"
+            var actualIp = "192.168.100.165:3000"
             var URL = "http://" + actualIp + "/engineer/" + engineerUuid
             console.log(URL)
             object = {
@@ -151,7 +151,7 @@ yourname.app = {
             var engineerUuid = device.uuid;
             console.log(engineerUuid);
             console.log(password)
-            var actualIp = "192.168.2.2:3000"
+            var actualIp = "192.168.100.165:3000"
             var URL = "http://" + actualIp + "/engineer/associate/" + engineerUuid + "/to/" + password
             console.log(URL)
              // myData =  {engineer:
@@ -182,7 +182,7 @@ yourname.app = {
             console.log('clicked2')
             var engineerUuid = device.uuid;
             console.log(engineerUuid);
-            var actualIp = "192.168.2.2:3000"
+            var actualIp = "192.168.100.165:3000"
             var URL = "http://" + actualIp + "/engineer/" + engineerUuid
             console.log(URL)
              // myData =  {engineer:
